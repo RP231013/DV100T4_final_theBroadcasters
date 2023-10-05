@@ -1,0 +1,854 @@
+body {
+  font-family: 'Major Mono Display', monospace;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #444444;
+}
+.carousel-item{
+  display: block;
+}
+a {
+  color: #106eea;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3b8af2;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Major Mono Display', monospace;
+}
+
+h6 {
+  text-decoration: none;
+  display: inline;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #106eea;
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #106eea;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #3284f1;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Disable aos animation delay on mobile devices */
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 75vh;
+  background: url("#");
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: relative;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+}
+
+#hero h1 span {
+  color: #106eea;
+}
+
+#hero h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#hero .btn-get-started {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #2870d5;
+}
+
+#hero .btn-get-started:hover {
+  background: #213b5f;
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  color: #222222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#hero .btn-watch-video i {
+  color: #106eea;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover {
+  color: #106eea;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #3b8af2;
+}
+
+.bx-play,
+.bx-heart {
+  color: #fbfbfb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: #03244f;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .btn-get-started,
+  #hero .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+.hero .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #106eea;
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: #106eea;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  color: #106eea;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/* Featured Movies */
+.featured-movies .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.featured-movies .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.featured-movies .icon-box:hover::before {
+  background: #106eea;
+  top: 0;
+  border-radius: 0px;
+}
+
+.featured-movies .icon {
+  margin-bottom: 15px;
+}
+
+.featured-movies .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured-movies .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.featured-movies .title a {
+  color: #111;
+}
+
+.featured-movies .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.featured-movies .icon-box:hover .title a,
+.featured-movies .icon-box:hover .description {
+  color: #fff;
+}
+
+.featured-movies .icon-box:hover .icon i {
+  color: #fff;
+}
+
+/* Slider */
+#hero {
+  padding: 80px 0;
+  background: url("#") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero .section-header {
+  margin-bottom: 40px;
+}
+
+.hero .hero-carousel,
+.hero-slider {
+  overflow: hidden;
+}
+
+.hero .hero-item .hero-img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.hero .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.H-movie-img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/*-------------------------------------Header and Footer CSS (Emily) START*/
+
+/*NAVBAR Styling */
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1em;
+  color: #FFFFFF;
+  padding: 25px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #FF1F4F;
+}
+
+.btn-default {
+  background-color: #7478F3;
+  color: #FFF;
+  border-color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-color: #FF1F4F;
+  color: #FFF;
+  border-color: #FFFFFF;
+}
+
+
+/*FOOTER Styling */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  padding: 40px 0;
+  background: linear-gradient(to right, #FF1F4F, #34F8FF);
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: black;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  /* Inherit color from parent*/
+  border: 1px solid #D2CECA;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+.footer .social a:hover {
+  opacity: 1;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #D2CECA;
+}
+
+
+
+/*-------------------------------------Header and Footer CSS (Emily) END*/
+
+/*-------------------------------------Detailed Page CSS (Enrique) START*/
+
+.detailed-body {
+  background-color: #141414;
+}
+
+.detailed-topRow {
+  margin-top: 20px;
+}
+
+.detailed-artwork {
+  height: 225px;
+  width: 150px;
+}
+
+.detailed-trailer {
+  height: 225px;
+  text-align: center;
+}
+
+.detailed-bottomRow {
+  float: left;
+  margin-top: 20px;
+}
+
+.detailed-button {
+  float: right;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  background-color: #7478F3;
+  color: white;
+  border-radius: 5px;
+  border:solid white 1px;
+  transition-duration: 00.1s;
+}
+
+.detailed-button:hover {
+  background-color: #03244f;
+}
+
+.detailed-movieName,
+.detailed-director,
+.detailed-actors,
+.detailed-synopsis,
+.detailed-year,
+.detailed-time,
+.detailed-rating {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/*-------------------------------------Detailed Page CSS (Enrique) END*/
+
+/*-------------------------------------Library Page CSS (Erik & Skyler) START*/
+/*
+{
+  background-color: #000000;
+  font-family: 'League Spartan', sans-serif;
+  color: white;
+  /* font-family: 'Raleway', sans-serif;
+
+}*/
+
+/*-------------------------------------Filter Dropdown Menu CSS START*/
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.fl-buttons {
+  min-width: 5em;
+  position: relative;
+}
+
+.fl-dropdown {
+  min-width: 4em;
+  position: relative;
+}
+
+.fl-dropdown * {
+  box-sizing: border-box;
+}
+
+.fl-select {
+  background: #2a2d35 ;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fl-select-clicked {
+  border: 2px #7478f3 solid;
+  box-shadow: 0 0 0.8em #7478f3;
+}
+
+.fl-select:hover {
+  background: #323741;
+}
+
+.fl-caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.fl-caret-rotate {
+  transform: rotate(180deg);
+}
+
+.fl-menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.fl-menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.fl-menu li:hover {
+  background: #2a2d35;
+}
+
+
+.fl-active {
+  background: #23242a;
+}
+
+.fl-menu-open {
+  display: block;
+  opacity: 1;
+}
+
+/*-------------------------------------Filter Dropdown Menu CSS END*/
+/*-------------------------------------Movie List*/
+
+#row-filter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #141414;
+}
+
+.card-title {
+  white-space: nowrap;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 110px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #141414;
+  bottom: auto;
+
+}
+
+.movie-card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #34f8ff;
+  min-height: 180px;
+
+}
+
+.btn-primary {
+  position: relative;
+  margin-right: 15px;
+  float: left;
+  height: 35px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: #7478f3;
+  border: none;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------Library Page CSS (Erik & Skyler) END*/
+
+/*-------------------------------------Sign In and Up Page CSS (Antonio) START*/
+.signIn-Updiv {
+  background-color: rgb(255, 255, 255);
+  border: solid 2px black;
+  width: 50%;
+  height: 700px;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-left: 340px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.signIn-otherText1{
+  margin-left: 130px;
+}
+.signIn-otherText2{
+  margin-left: 170px;
+}
+#signIn-welcomeTextStyle{
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.signIn-Indiv {
+  background-color: rgb(255, 255, 255);
+  border: solid 2px black;
+  width: 50%;
+  height: 600px;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-left: 340px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.signIn-btn {
+  background-color: #7478f3;
+  border-radius: 40px;
+  border: rgb(255, 255, 255);
+  color: white;
+
+}
+.signIn-btnMar {
+
+  margin-left: 30px;
+}
+.signIn-btnLower {
+  background-color: #7478f3;
+
+  color: white;
+  margin-left: 70px;
+}
+.signIn-lowerbtnMar{
+  margin-left: 140px;
+}
+.signIn-switch-button {
+  width: 200px;
+  height: 50px;
+
+  border-radius: 40px;
+}
+.signIn-headText{
+  margin-left: 240px;
+  
+}
+
+.signIn-textbox {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-left: 28px;
+}
+
+.signIn-textbox-button {
+  width: 85%;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-left: 27px;
+  margin-top: 20px;
+}
+
+.signIn-titles {
+  margin-left: 60px;
+}
+
+
+/*-------------------------------------Sign In and Up Page CSS (Antonio) END*/
