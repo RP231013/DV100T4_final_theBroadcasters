@@ -1,0 +1,170 @@
+/* global styles */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nanum+Gothic&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Major Mono Display', monospace;
+    color: rgba(252, 27, 218, 0.754);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5{
+    font-family: 'Major Mono Display', monospace;
+    color: rgba(252, 27, 218, 0.754);
+}
+
+h6, p, body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2{
+    font-size: 6vh;
+}
+
+h3{
+    font-size: 4vh;
+}
+
+/* BG for vh section */
+.mainSection {
+    height: fit-content;
+    padding-top: 5vh;
+    background-image: url("../assets/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* BS navbar overrides*/
+.navbar{ 
+    background-color: rgba(0, 0, 0, 0.10)!important;
+    backdrop-filter: blur(100px);
+    margin-bottom: -7vh;
+}
+
+.navbar .btn-outline-primary{
+    font-size: 1vw;
+    border: 2px solid blueviolet;
+    color: white;
+}
+
+.navbar .btn-outline-primary:hover{
+    font-size: 1vw;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bolder;
+}
+
+/* cards */
+.mainSection .card {
+    height: fit-content;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(100px);
+    color: white;
+}
+
+
+.videoContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25% !important;
+}
+
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;  
+    z-index: 0; 
+}
+
+.card-info{
+    position: relative;
+    z-index: 1; 
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: -19%;
+}
+
+
+.card-info p{
+    font-size: 1.5vh;
+}
+
+/* buttons */
+.btn-primary {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(252, 27, 218, 0.246);
+    backdrop-filter: blur(100px);
+    color: white; 
+}
+
+.btn-primary:hover {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(252, 27, 218, 0.8);
+
+}
+
+
+.secondarySection {
+    height: fit-content;
+    padding-top: 3vh;
+    background-image: url("../assets/bg9.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.secondarySection .card{
+    height: fit-content;
+    width: 100%;
+    border-radius: 28px;
+    margin: 2%;
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(100px);
+    color: white;
+    text-align: left;
+}
+
+.secondarySection .card-img-top{
+    margin: 12px;
+    border-radius: 14px;
+    width: auto;
+    height: 300px;
+    object-fit:cover;
+}
+
+.secondarySection .card h5{
+    color: magenta;
+}
+
+.secondarySection .card p{
+    opacity: 0.7;
+}
+
+/* footer */
+.footer{
+    width: 100vw;
+    margin-left: 0px;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    height: fit-content;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.722);
+    background-color: black;
+    padding-bottom: 2vh;
+}
+
+.footer ul{
+    list-style: none;
+}
