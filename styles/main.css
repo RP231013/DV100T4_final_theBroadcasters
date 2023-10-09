@@ -65,6 +65,7 @@ h3{
     --bs-btn-border-color: blueviolet;
 }
 
+
 /* cards */
 .mainSection .card {
     height: fit-content;
@@ -98,7 +99,7 @@ h3{
     z-index: 1; 
     margin-right: 2%;
     margin-left: 2%;
-    margin-top: -19%;
+    margin-top: -20%;
 }
 
 
@@ -250,4 +251,12 @@ h3{
 .center-signInBtn{
     display: flex;
     justify-content: center;
+}
+
+.carousel-control-prev{
+    width: 2%;
+}
+
+.carousel-control-next{
+    width: 2%;
 }
