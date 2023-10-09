@@ -78,3 +78,21 @@ font-family: 'Nanum Gothic', sans-serif;
     height: 300px;
     object-fit:cover;
 }
+
+/* Footer */
+
+.footer{
+    width: 100vw;
+    margin-left: 0px;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    height: fit-content;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.722);
+    background-color: black;
+    padding-bottom: 2vh;
+}
+
+.footer ul{
+    list-style: none;
+}
