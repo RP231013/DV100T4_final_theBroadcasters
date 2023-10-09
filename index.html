@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Other meta data-->
-    <meta name="siteTitle" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="siteTitle" content="The Broadcasters">
+    <meta name="description" content="Home Page of The Broadcasters">
+    <meta name="keywords" content="The Broadcasters, streaming, video, movies, space movies">
     <meta name="author" content="Tertius Jonker, Isaac Mooketsi, Rouxan Potgieter, Enrique De Sousa">
 
     <title>The Broadcasters</title>
@@ -17,8 +17,346 @@
   </head>
   <body>
     
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/logoExpanded.png" alt="LogoImage" style="width: 25vw;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-0.5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/watchlist.html">Watch-list</a>
+            </li>
+          </ul>
+          <form class="d-flex" >
+            <!-- user icon -->
+            <svg class="mt-1 p-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83         1.418-.832 1.664h10Z"/>
+            </svg>
 
+            <!-- user info -->
+            <p class="userName m-2 p-0" style="color: white; font-size: 1vw;">Hello, User!</p>
+            <p class="m-3" style="color: white; font-size: 1vw;"></p>
+
+            <!-- log in button -->
+            <a class="nav-link" href="pages/signin.html"><button class="btn btn-outline-primary">Log in</button></a>
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- container for main content and BG -->
+    <div class=" mainSection">
+      
+
+      <!-- carousel ----------------------------------------------------------------------------->
+      <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- carousel -->
+        <div class="carousel-inner ">
+          
+          <!-- slide 1 -->
+          <div class="carousel-item active p-0 m-0 mt-2">
+
+            <div class="videoContainer">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/TcMBFSGVi1c?si=x5d45j4ZO_gV0QDx&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+              <div class="card-info">
+                <div class="col-lg-9 col-md-8 col-sm-11">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h2 class="card-title">Avengers: Endgame</h2>
+                      <p class="card-text">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
+                      <a href="#" class="btn btn-primary">Info</a>
+                      <a href="#" class="btn btn-primary">Add to watchlist <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg></a>
+                    </div>
+                   
+                  </div> <!-- end card -->
+                </div> <!-- end col -->
+              </div> <!-- end card info -->
+            </div> <!-- end videoContainer -->
+
+          </div> <!-- end slide 1 -->
+
+          <!-- slide 2 -->
+          <div class="carousel-item p-0 m-0 mt-2">
+
+            <div class="videoContainer">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/olXYZOsXw_o?si=Xc9LQaA5WyBjp9RA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+              <div class="card-info">
+                <div class="col-lg-6 col-md-8 col-sm-11">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h2 class="card-title">Space Jam</h2>
+                      <p class="card-text">After Michael Jordan's retirement, he is abducted by Bugs Bunny from the Looney Tunes group and is asked to play a match to defeat the Nerdlucks, a criminal alien group led by Swackhammer.</p>
+                      <a href="#" class="btn btn-primary">Info</a>
+                      <a href="#" class="btn btn-primary">Add to watchlist <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg></a>
+                    </div>
+                   
+                  </div> <!-- end card -->
+                </div> <!-- end col -->
+              </div> <!-- end card info -->
+            </div> <!-- end videoContainer -->
+
+          </div> <!-- end slide 2 -->
+
+          <!-- slide 3 -->
+          <div class="carousel-item p-0 m-0 mt-2">
+
+            <div class="videoContainer">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/agnpaFLo0to?si=cPkIvhl3ywlMxju1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+              <div class="card-info">
+                <div class="col-lg-6 col-md-8 col-sm-11">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h2 class="card-title">Color out of Space</h2>
+                      <p class="card-text">After a meteorite lands in the front yard of their farm, Nathan Gardner and his family find themselves battling a mutant extraterrestrial organism that infects their minds and bodies, transforming their quiet rural life into a technicolor nightmare.</p>
+                      <a href="#" class="btn btn-primary">Info</a>
+                      <a href="#" class="btn btn-primary">Add to watchlist <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg></a>
+                    </div>
+                   
+                  </div> <!-- end card -->
+                </div> <!-- end col -->
+              </div> <!-- end card info -->
+            </div> <!-- end videoContainer -->
+
+          </div> <!-- end slide 3 -->
+
+          
+          <!-- end carousel inner -->
+        </div>
+
+        <!-- carousel buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 26 46" fill="none">
+              <path d="M4 26H7V20H4L4 26ZM0.87868 20.8787C-0.292893 22.0503 -0.292893 23.9497 0.87868 25.1213L19.9706 44.2132C21.1421 45.3848 23.0416 45.3848 24.2132 44.2132C25.3848 43.0416 25.3848 41.1421 24.2132 39.9706L7.24264 23L24.2132 6.02944C25.3848 4.85786 25.3848 2.95837 24.2132 1.7868C23.0416 0.615223 21.1421 0.615223 19.9706 1.7868L0.87868 20.8787ZM4 20H3L3 26H4L4 20Z" fill="white" fill-opacity="0.95"/>
+          </svg>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 26 46" fill="none">
+              <path d="M22 20H19V26H22V20ZM25.1213 25.1213C26.2929 23.9497 26.2929 22.0503 25.1213 20.8787L6.02944 1.7868C4.85786 0.615223 2.95837 0.615223 1.7868 1.7868C0.615223 2.95837 0.615223 4.85786 1.7868 6.02944L18.7574 23L1.7868 39.9706C0.615223 41.1421 0.615223 43.0416 1.7868 44.2132C2.95837 45.3848 4.85786 45.3848 6.02944 44.2132L25.1213 25.1213ZM22 26H23V20H22V26Z" fill="white" fill-opacity="0.95"/>
+          </svg>
+        </button>
+      <!-- end carousel buttons -->
+
+
+      </div> <!-- end carousel ----------------------------------------------------------------------------->
+      
+      
+      
+    </div> <!-- end main section -->
+
+
+    <div class="secondarySection">
+      <div class="container">
+        <div class="row">
+          <h2>Today's most popular</h2>
+          
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+              <!-- div card -->
+              <div class="card ">
+
+                <!-- poster img -->
+                <img src="assets//poster6.png" class="card-img-top" alt="...">
+                
+                <!-- div card body -->
+                <div class="card-body">
+                  <h5 class="card-title">Lorem ipsum dolor</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                  <a href="#" class="btn btn-primary">Info</a>
+                  <!-- heart button -->
+                  <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg></a>
+                  <!-- end div card body -->
+              </div>
+              <!-- end div card -->
+            </div>
+            <!-- end card div col -->
+          </div>
+
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <!-- div card -->
+            <div class="card ">
+
+              <!-- poster img -->
+              <img src="assets//poster1.png" class="card-img-top" alt="...">
+              
+              <!-- div card body -->
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                <a href="#" class="btn btn-primary">Info</a>
+                <!-- heart button -->
+                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+                <!-- end div card body -->
+              </div>
+            <!-- end div card -->
+            </div>
+          <!-- end card div col -->
+          </div>
+
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <!-- div card -->
+            <div class="card ">
+
+              <!-- poster img -->
+              <img src="assets//poster2.png" class="card-img-top" alt="...">
+              
+              <!-- div card body -->
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                <a href="#" class="btn btn-primary">Info</a>
+                <!-- heart button -->
+                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+                <!-- end div card body -->
+              </div>
+            <!-- end div card -->
+            </div>
+          <!-- end card div col -->
+          </div>
+
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <!-- div card -->
+            <div class="card ">
+
+              <!-- poster img -->
+              <img src="assets//poster3.png" class="card-img-top" alt="...">
+              
+              <!-- div card body -->
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                <a href="#" class="btn btn-primary">Info</a>
+                <!-- heart button -->
+                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+                <!-- end div card body -->
+              </div>
+            <!-- end div card -->
+            </div>
+          <!-- end card div col -->
+          </div>
+
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <!-- div card -->
+            <div class="card ">
+
+              <!-- poster img -->
+              <img src="assets//poster4.png" class="card-img-top" alt="...">
+              
+              <!-- div card body -->
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                <a href="#" class="btn btn-primary">Info</a>
+                <!-- heart button -->
+                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+                <!-- end div card body -->
+              </div>
+            <!-- end div card -->
+            </div>
+          <!-- end card div col -->
+          </div>
+
+          <!-- cards div col -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <!-- div card -->
+            <div class="card ">
+
+              <!-- poster img -->
+              <img src="assets//poster5.png" class="card-img-top" alt="...">
+              
+              <!-- div card body -->
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, natus.</p>
+                <a href="#" class="btn btn-primary">Info</a>
+                <!-- heart button -->
+                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+                <!-- end div card body -->
+              </div>
+            <!-- end div card -->
+            </div>
+          <!-- end card div col -->
+          </div>
+        
+
+        
+
+        </div>
+      <!-- end secondary section -->
+    </div>
     
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-4">
+          <ul>
+            <li>About us</li>
+            <li>Legal</li>
+            <li>©2023</li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <img src="assets/logoSmall.png" width="60vh" height="auto" alt="">
+        </div>
+
+        <div class="col-4">
+          
+          <img style="width: 5vw;" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg" alt="">
+          <p>This website uses The Movie Database's API, however TMDB is in no way associated with this website.</p>
+        </div>
+
+        </div>
+      </div>
+      
+    </div>
     
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
