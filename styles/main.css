@@ -1,0 +1,18 @@
+/* Library page stuff */
+.card{
+    height: fit-content;
+    width: 100%;
+    border-radius: 28px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    color: white;
+}
+
+.card-image-top{
+    margin: 12px;
+    border-radius: 14px;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
