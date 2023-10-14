@@ -92,7 +92,16 @@ h3{
     margin-top: 10%;
 }
 
+.badge {
+    background-color: #2b2b2b;
+}
 
+/* img-fluid Override */
+
+.img-fluid{
+    width: 70%;
+    height: 360px;
+}
 
 .videoContainer{
     position: relative;
