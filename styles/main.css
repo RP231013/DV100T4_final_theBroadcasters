@@ -96,6 +96,12 @@ h3{
     background-color: #2b2b2b;
 }
 
+.watchlistB {
+    background-image: url('../assets/bckg1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 /* img-fluid Override */
 
 .img-fluid{
