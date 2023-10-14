@@ -101,6 +101,9 @@ h3{
     background-position: center;
     background-size: cover;
 }
+.small, .text-body-secondary {
+    color: white !important;
+}
 
 /* img-fluid Override */
 
@@ -313,3 +316,7 @@ h3{
 .carousel-control-next{
     width: 2%;
 }
+
+/* Testing zone */
+
+
