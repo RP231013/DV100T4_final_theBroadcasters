@@ -88,7 +88,29 @@ h3{
     height: 50px;
 }
 
+.mrg-tp {
+    margin-top: 10%;
+}
 
+.badge {
+    background-color: #2b2b2b;
+}
+
+.watchlistB {
+    background-image: url('../assets/bckg1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.small, .text-body-secondary {
+    color: white !important;
+}
+
+/* img-fluid Override */
+
+.img-fluid{
+    width: 70%;
+    height: 360px;
+}
 
 .videoContainer{
     position: relative;
@@ -298,3 +320,7 @@ box-shadow: 5px 2.5px 29px -30px #ffffff;
 .carousel-control-next{
     width: 2%;
 }
+
+/* Testing zone */
+
+
