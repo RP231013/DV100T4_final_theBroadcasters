@@ -172,6 +172,10 @@ h3{
     background: rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(100px);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 5px 2.5px 29px -30px #ffffff;
+-moz-box-shadow: 5px 2.5px 29px -30px #ffffff;
+box-shadow: 5px 2.5px 29px -30px #ffffff;
 }
 
 .card-img-top{
