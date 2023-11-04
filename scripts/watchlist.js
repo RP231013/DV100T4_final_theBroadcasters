@@ -76,8 +76,10 @@ function loadMovieCards(watchlist){
     
 }
 
-$(document).on('click', '#likeBTN' , function() {
+// Remove item from local storage
 
+$(document).on('click', '#likeBTN' , function() {
+    $(this).parents(".card").remove();
     localStorage.removeItem('card');
 
 })
