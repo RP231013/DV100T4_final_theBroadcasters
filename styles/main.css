@@ -3,6 +3,7 @@
 
 body{
     overflow-x: hidden;
+    position: relative;
 }
 
 h1{
@@ -138,6 +139,11 @@ h3{
     margin-top: -20%;
 }
 
+.blur{
+    filter: blur(20px) brightness(0.7) !important;
+    transition: filter 0.3s;
+}
+
 
 .card-info p{
     font-size: 1.5vh;
@@ -159,7 +165,7 @@ h3{
 
 
 .secondarySection {
-    height: fit-content;
+    height: 1500px;
     padding-top: 3vh;
     background-image: url("../assets/bg9.jpg");
     background-position: center;
@@ -194,15 +200,21 @@ h3{
     background: rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(100px);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 5px 2.5px 29px -30px #ffffff;
+-moz-box-shadow: 5px 2.5px 29px -30px #ffffff;
+box-shadow: 5px 2.5px 29px -30px #ffffff;
 }
 
 .card-img-top{
     margin: 12px;
     border-radius: 14px;
     width: auto;
-    height: 300px;
+    height: 400px !important;
     object-fit:cover;
 }
+
+
 
 .secondarySection .card h5{
     color: magenta;
@@ -218,7 +230,11 @@ h3{
 .footer{
     width: 100vw;
     margin-left: 0px;
-    margin-top: 3vh;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
     padding-top: 3vh;
     height: fit-content;
     text-align: center;

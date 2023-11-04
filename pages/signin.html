@@ -26,7 +26,7 @@
         <form class="d-flex" >
 
           <!-- log in button -->
-          <a class="nav-link" href="../index.html"><button class="btn btn-outline-primary" disabled>Back</button></a>
+          <a class=" btn btn-outline-primary" href="../index.html">Back</a>
           
         </form>
         </div>
@@ -40,40 +40,43 @@
         <div class="row">
 
           <div class="form-center">
-            <form>
+            <form id="signForm">
               <h3 style="text-align: center;" >Log in</h3>
 
               <div class="btn-group-center">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                  <label class="btn btn-outline-primary" for="btnradio1">Log in</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="login-radio-btn" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="login-radio-btn">Log in</label>
               
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio2">Sign in</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="signup-radio-btn" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="signup-radio-btn">Sign up</label>
               
                 </div>
               </div>
               
-
-              <form id="signupForm" action="" method="post" novalidate="">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                  <div class="invalid-feedback">Email is Invalid</div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="6" required>
-                  <div class="invalid-feedback">Password must be more than 6 characters</div>
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
-                </div>
-                <div class="center-signInBtn">
-                  <button type="submit" class="btn btn-primary sign-in-btn">Sign in</button>
-                </div>
-              </form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+              </div>
+              <div class="center-signInBtn">
+                <button type="submit" class="btn btn-primary sign-in-btn">Log in</button>
+              </div>
               
             </form>
           </div>
@@ -114,7 +117,7 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/signin.js"></script>
 
   </body>
 </html>

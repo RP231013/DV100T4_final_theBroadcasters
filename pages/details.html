@@ -63,34 +63,25 @@
   
   <!-- main -->
   <div class="container mt-5 pt-5">
-    <div class="row ">
+    <div class="row" id="movieDeats">
       <div class="col-4">
-        <div class="card">
-          <img src="https://wallpapers.com/images/high/moonfall-destroyed-city-07is7kski6o9zio7.webp" alt="Movie Poster"
-            class="">
+        <div class="card" id="posterPlace">
+          <img id="movDeatsPoster" src="https://wallpapers.com/images/high/moonfall-destroyed-city-07is7kski6o9zio7.webp" alt="Movie Poster"
+            class="m-2 rounded-4 p-2">
         </div>
 
       </div>
       <div class="col-8">
         <div class="card ">
           <div class="card-body">
-            <h2 class="card-title">Moonfall</h2>
+            <h2 class="card-title" id="movTitle"></h2>
 
             <div class="card-pill">
-              <a href="#" class="badge badge-primary">Primary</a>
-              <a href="#" class="badge badge-secondary">Secondary</a>
-              <a href="#" class="badge badge-success">Success</a>
-              <a href="#" class="badge badge-danger">Danger</a>
-              <a href="#" class="badge badge-warning">Warning</a>
-              <a href="#" class="badge badge-info">Info</a>
-              <a href="#" class="badge badge-light">Light</a>
-              <a href="#" class="badge badge-dark">Dark</a>
+              <h5 class="badge badge-primary" id="movieGenre"></h5>
+
             </div>
 
-            <p class="card-text mt-4"><b>Description:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              saepe
-              debitis? Eius iusto possimus, iure iste repudiandae delectus nobis voluptatem dignissimos quam a
-              architecto veniam vel quo ipsa adipisci sunt?</p>
+            <p class="card-text mt-4" id="movDesc"></p>
             <br>
             <a href="#" class="btn btn-primary"><b>Watch</b></a>
             <a href="#trailor" class="btn btn-primary"><b>Trailor</b></a>
@@ -100,10 +91,9 @@
                   d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
               </svg></a>
               <!-- movie info -->
-        <p class="card-text mt-5"><b>Director:</b> John Doe</p>
-        <p class="card-text"><b>Release Date:</b> January 1, 2023</p>
-        <p class="card-text"><b>Genre:</b> Action, Adventure</p>
-        <p class="card-text"><b>Rating:</b> 4.5/5</p>
+        <p class="card-text mt-5" id="resDate">Release Date: </p>
+        <p class="card-text" id="runTime">Run time:  min</p>
+        <p class="card-text" id="rating">Rating </p>
         </div>
       </div>
     </div>
@@ -112,147 +102,20 @@
     <div class="row" id="trailor">
       <div class="col-12">
         <div class="videoContainer">
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ivIwdQBlS10" allowfullscreen></iframe>
+          <iframe id="trailorPlayer" class="responsive-iframe" src="https://www.youtube.com/embed/ivIwdQBlS10" allowfullscreen></iframe>
         </div>
       </div>
         
     </div>
     
+
     
-    <!-- similar shows -->
-    <div class="row mt-5">
-      <h2 style="text-align: center;">Similar Shows:</h2>
-
-
-      <div class="container">
-
-        <div class="row">
-
-          <!-- div col -->
-          <div class="col-lg-3 col-md-4 col-sm-6">
-
-            <!-- div card1 -->
-            <div class="card ">
-
-              <!-- poster img -->
-              <img src="../assets/mvieP-Color.jpg" class="card-img-top" alt="...">
-
-              <!-- div card body -->
-              <div class="card-body">
-                <h5 class="card-title">Color Of Space</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <!-- heart button -->
-                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                  </svg></a>
-                <!-- end div card body -->
-              </div>
-              <!-- end div card -->
-            </div>
-            <!-- end div col -->
-          </div>
-
-          <!-- div col -->
-          <div class="col-lg-3 col-md-4 col-sm-6">
-
-            <!-- div card2 -->
-            <div class="card ">
-
-              <!-- poster img -->
-              <img src="../assets/mvieP-Endgame.jpg" class="card-img-top" alt="...">
-
-              <!-- div card body -->
-              <div class="card-body">
-                <h5 class="card-title">Avengers: Endgame</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <!-- heart button -->
-                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                  </svg></a>
-                <!-- end div card body -->
-              </div>
-              <!-- end div card -->
-            </div>
-            <!-- end div col -->
-          </div>
 
 
 
-          <!-- div col -->
-          <div class="col-lg-3 col-md-4 col-sm-6">
-
-            <!-- div card4 -->
-            <div class="card ">
-
-              <!-- poster img -->
-              <img src="../assets/mvieP-Guardians.jpg" class="card-img-top" alt="...">
-
-              <!-- div card body -->
-              <div class="card-body">
-                <h5 class="card-title">Guardians Of the Galaxy</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <!-- heart button -->
-                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                  </svg></a>
-                <!-- end div card body -->
-              </div>
-              <!-- end div card -->
-            </div>
-            <!-- end div col -->
-          </div>
-
-          <!-- div col -->
-          <div class="col-lg-3 col-md-4 col-sm-6">
-
-            <!-- div card5 -->
-            <div class="card ">
-
-              <!-- poster img -->
-              <img src="../assets/mvieP-Jam.jpg" class="card-img-top" alt="...">
-
-              <!-- div card body -->
-              <div class="card-body">
-                <h5 class="card-title">Space Jam</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <!-- heart button -->
-                <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                  </svg></a>
-                <!-- end div card body -->
-              </div>
-              <!-- end div card -->
-            </div>
-            <!-- end div col -->
-          </div>
-      </div>
-    </div>
-
-
-
-
+  </div>
     <!-- footer -->
-    <div class="footer">
+    <div class="footer mt-5">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -286,7 +149,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/details.js"></script>
 
 </body>
 
