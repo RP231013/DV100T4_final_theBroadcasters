@@ -46,7 +46,7 @@ function loadMovieCards(watchlist){
                                     <p class="card-text mt-4" id="overview">${movie.overview}</p>
                                     <div class="card-button mt-5">
                                         <a href="#" class="btn btn-primary">Watch</a>
-                                        <a href="#" class="btn btn-primary">
+                                        <a href="#" class="btn btn-primary" id="likeBTN">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                                             </svg>
@@ -75,3 +75,9 @@ function loadMovieCards(watchlist){
 
     
 }
+
+$(document).on('click', '#likeBTN' , function() {
+
+    localStorage.removeItem('card');
+
+})
