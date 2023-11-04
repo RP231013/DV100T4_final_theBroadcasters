@@ -84,7 +84,33 @@
         </div>
       </div>
 
-      
+      <!-- Filters and Sorts -->
+      <div class="row">
+
+        <!-- Filter Radio Buttons -->
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="filterRadio" id="allDestinationsFilter" value="" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="allDestinationsFilter">All Destinations</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="shortFilter" value="short" autocomplete="off">
+          <label class="btn btn-outline-primary" for="shortFilter"><i class="bi-alarm"></i> Short Duration Trips</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="longFilter" value="long" autocomplete="off">
+          <label class="btn btn-outline-primary" for="longFilter"><i class="bi bi-alarm-fill"></i> Long Duration Trips</label>
+
+          <input type="radio" class="btn-check" name="filterRadio" id="singleFilter" value="single" autocomplete="off">
+          <label class="btn btn-outline-primary" for="singleFilter"><i class="bi bi-geo-alt-fill"></i> Single Destination</label>
+
+          <input type="radio" class="btn-check" name="filterRadio" id="multiFilter" value="multi" autocomplete="off">
+          <label class="btn btn-outline-primary" for="multiFilter"><i class="bi bi-geo-alt"></i> Multi Destinations</label>
+
+          <input type="radio" class="btn-check" name="filterRadio" id="roundFilter" value="round" autocomplete="off">
+          <label class="btn btn-outline-primary" for="roundFilter"><i class="bi bi-geo-fill"></i> Round Trips</label>
+
+          <input type="radio" class="btn-check" name="filterRadio" id="rowFilter" value="rowboat" autocomplete="off">
+          <label class="btn btn-outline-primary" for="rowFilter"><i class="bi bi-coin"></i> Row Boat Special</label>
+        </div>
+      </div>
 
       <div class="row" id="trending-movie-cards-container"></div>
 
@@ -129,7 +155,7 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/library.js"></script>
 
 </body>
 
