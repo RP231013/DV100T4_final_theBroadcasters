@@ -48,7 +48,7 @@ function getMovieDetails(movieID){
 
                     })
                     .catch(function(error) {
-                        console.error("Error:", error);
+                        $(".videoContainer").append(`<p>This movie does not have a trailer.</p>`);
                     });
                 
 

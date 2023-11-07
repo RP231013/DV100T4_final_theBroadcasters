@@ -27,6 +27,7 @@ $(document).ready(function(){
 
     // function for when "log in button" is clicked
     // Note: code from line 30-36 and >43 was added by Tertius (copied from his commit)
+    // also, invalid input text (html) was added by him
     $('#signForm').submit(function(event) {
 
         event.preventDefault();
