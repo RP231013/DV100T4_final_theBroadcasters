@@ -3,6 +3,7 @@ let watchlistArray = JSON.parse(localStorage.getItem('watchlist')) || [];
 
 $(document).ready(function() {
 
+    checkLoginStatus();
 
     if (watchlistArray.length === 0) {
         // Display a message when the watchlist is empty
@@ -11,7 +12,7 @@ $(document).ready(function() {
     }
 
     loadMovieCards(watchlistArray);
-    checkLoginStatus();
+    
 
 
 });
@@ -66,6 +67,7 @@ function loadMovieCards(watchlistArray){
 
             // Append card to the watchlist container
             $('#watchListMovies').append(movieCard);
+            
     
             }, 
             error: function(error){

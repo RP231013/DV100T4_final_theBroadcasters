@@ -3,7 +3,7 @@
 
 Welcome to The Broadcasters - an online streaming service project that utilizes javascript and jQuery.
 
-[Watch the demo video here](insert link here)
+[Watch the demo video here](https://drive.google.com/file/d/13vuyxapopjit2gJJ05mouDUL_1crq4qC/view?usp=sharing)
 
 ## Table of Contents
 
