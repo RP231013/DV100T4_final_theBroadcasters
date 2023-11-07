@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Other meta data-->
-  <meta name="siteTitle" content="">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="siteTitle" content="The Broadcasters">
+  <meta name="description" content="Library Page of The Broadcasters">
+  <meta name="keywords" content="The Broadcasters, streaming, video, movies, space movies">
   <meta name="author" content="Tertius Jonker, Isaac Mooketsi, Rouxan Potgieter, Enrique De Sousa">
 
   <title>Library - The Broadcasters</title>
@@ -26,13 +26,10 @@
 
 
   <!-- nav -->
-
   <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
     <div class="container">
-      <a class="navbar-brand" href="../index.html"><img src="../assets/logoExpanded.png" alt="LogoImage"
-          style="width: 25vw;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/logoExpanded.png" alt="LogoImage" style="width: 25vw;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,27 +38,21 @@
             <a class="nav-link " aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="pages/library.html">Library</a>
+            <a class="nav-link active" href="../pages/library.html">Library</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="watchlist.html">Watch-list</a>
+            <a class="nav-link " href="../pages/watchlist.html">Watch-list</a>
           </li>
         </ul>
         <form class="d-flex">
-          <!-- user icon -->
-          <svg class="mt-1 p-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
-            class="bi bi-person" viewBox="0 0 16 16">
-            <path
-              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83         1.418-.832 1.664h10Z" />
+          <!-- user icon & info -->
+          <svg class="mt-1 p-1 userStuff" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
           </svg>
 
-          <!-- user info -->
-          <p class="userName m-2 p-0" style="color: white; font-size: 1vw;">Hello, User!</p>
-          <p class="m-3" style="color: white; font-size: 1vw;"></p>
-
-          <!-- log in button -->
-          <a class="nav-link" href="pages/signin.html"><button class="btn btn-outline-primary">Log in</button></a>
-
+          <p class="userName m-2 p-0 userStuff" style="color: white; font-size: 1vw;" id="insertUser">Hello, </p>
+          <p class="m-3 userStuff" style="color: white; font-size: 1vw;"></p>
+          <a class="btn btn-primary logBtn" href="pages/signin.html">Log in</a>
         </form>
       </div>
     </div>
@@ -70,216 +61,198 @@
 
 
 
+
   
 
   <div class="secondarySection">
+    
 
     <div class="container">
-      <div>
+      
+      <div >
         <div>
           <h1 class="mt-5 pt-5" id="">The Broadcasters</h1>
           <br>
           <h5 class="whiteText">Library</h5>
           <hr class="hrWatchlist">
+
+          <!-- buttons for filtering -->
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <!-- all movies -->
+            <button type="button" class="btn btn-primary" id="allFilter">All</button>
+
+            <!-- High rating -->
+            <button type="button" class="btn btn-primary" id="HighlyRatedFilter">Highly Rated</button>
+          
+            <!-- dropdown buttons for genre -->
+            <!-- dropdown buttons for genre -->
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Genre
+              </button>
+              <ul class="dropdown-menu" id="genreDropdownMenu" aria-labelledby="btnGroupDrop1">
+                <!-- Genre items will be appended here by the JavaScript function -->
+              </ul>
+            </div>
+
+            <!-- dropdown buttons for year -->
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop2" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Year
+              </button>
+              <ul class="dropdown-menu" id="yearDropdownMenuFilter" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item btn btn-primary" value="primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-31">2023</a></li>
+                <li><a class="dropdown-item btn btn-primary" value="primary_release_date.gte=2020-01-01&primary_release_date.lte=2023-12-31">2020's</a></li>
+                <li><a class="dropdown-item btn btn-primary" value="primary_release_date.gte=2010-01-01&primary_release_date.lte=2019-12-31">2010's</a></li>
+                <li><a class="dropdown-item btn btn-primary" value="primary_release_date.gte=2000-01-01&primary_release_date.lte=2009-12-31" >2000's</a></li>
+                <li><a class="dropdown-item btn btn-primary" value="primary_release_date.gte=1900-01-01&primary_release_date.lte=1999-12-31">1900's</a></li>
+                
+              </ul>
+            </div>
+
+
+          </div>
         </div>
+
+        <div id="addHeadingHere" class="mt-3"><h2>All movies</h2></div>
+
       </div>
 
-      <div class="row">
 
-        <!-- div col -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="mt-5">
+        <div class="container" style="height: fit-content; padding-bottom: 7vh;">
+          <div class="row" id="trending-movie-cards-container">
 
-          <!-- div card1 -->
-          <div class="card ">
-
-            <!-- poster img -->
-            <img src="../assets/mvieP-Color.jpg" class="card-img-top" alt="...">
-
-            <!-- div card body -->
-            <div class="card-img-overlay card-info-hover">
-              <h5 class="card-title">Color Of Space</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              <!-- heart button -->
-              <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg></a>
-              <!-- end div card body -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+  
+              <div class="card" aria-hidden="true">
+  
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+              </div>
+            <!-- end card div col -->
             </div>
-            <!-- end div card -->
-          </div>
-          <!-- end div col -->
-        </div>
-
-        <!-- div col -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-
-          <!-- div card2 -->
-          <div class="card ">
-
-            <!-- poster img -->
-            <img src="../assets/mvieP-Endgame.jpg" class="card-img-top" alt="...">
-
-            <!-- div card body -->
-            <div class="card-img-overlay card-info-hover">
-              <h5 class="card-title">Avengers: Endgame</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              <!-- heart button -->
-              <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg></a>
-              <!-- end div card body -->
+  
+            <!-- cards div col -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+  
+              <!-- div card -->
+              <div class="card" aria-hidden="true">
+  
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+              </div>
+            <!-- end card div col -->
             </div>
-            <!-- end div card -->
-          </div>
-          <!-- end div col -->
-        </div>
-
-        <!-- div col -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-
-          <!-- div card3 -->
-          <div class="card ">
-
-            <!-- poster img -->
-            <img src="../assets/mvieP-Galaxy.webp" class="card-img-top" alt="...">
-
-            <!-- div card body -->
-            <div class="card-img-overlay card-info-hover">
-              <h5 class="card-title">Galaxy</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              <!-- heart button -->
-              <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg></a>
-              <!-- end div card body -->
+  
+            <!-- cards div col -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+  
+              <!-- div card -->
+              <div class="card" aria-hidden="true">
+  
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+              </div>
+            <!-- end card div col -->
             </div>
-            <!-- end div card -->
-          </div>
-          <!-- end div col -->
-        </div>
-
-        <!-- div col -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-
-          <!-- div card4 -->
-          <div class="card ">
-
-            <!-- poster img -->
-            <img src="../assets/mvieP-Guardians.jpg" class="card-img-top" alt="...">
-
-            <!-- div card body -->
-            <div class="card-img-overlay card-info-hover">
-              <h5 class="card-title">Guardians Of the Galaxy</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              <!-- heart button -->
-              <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg></a>
-              <!-- end div card body -->
+  
+            <!-- cards div col -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+  
+              <!-- div card -->
+              <div class="card" aria-hidden="true">
+  
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+              </div>
+            <!-- end card div col -->
             </div>
-            <!-- end div card -->
-          </div>
-          <!-- end div col -->
-        </div>
-
-        <!-- div col -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-
-          <!-- div card5 -->
-          <div class="card ">
-
-            <!-- poster img -->
-            <img src="../assets/mvieP-Jam.jpg" class="card-img-top" alt="...">
-
-            <!-- div card body -->
-            <div class="card-img-overlay card-info-hover">
-              <h5 class="card-title">Space Jam</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              <!-- heart button -->
-              <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path
-                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg></a>
-              <!-- end div card body -->
+  
+            <!-- cards div col -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+  
+              <!-- div card -->
+              <div class="card" aria-hidden="true">
+  
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                  </p>
+                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+              </div>
+            <!-- end card div col -->
             </div>
-            <!-- end div card -->
+          
+  
+          
+  
           </div>
-          <!-- end div col -->
-        </div>
-
-
-
-
-
-
-
-
-
-
-
+        <!-- end secondary section -->
       </div>
+    </div>
 
     </div>
   </div>
 
 
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <ul>
-            <li>About us</li>
-            <li>Legal</li>
-            <li>©2023</li>
-          </ul>
-        </div>
 
-        <div class="col-4">
-          <img src="../assets/logoSmall.png" width="60vh" height="auto" alt="">
-        </div>
-
-        <div class="col-4">
-
-          <img style="width: 5vw;"
-            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
-            alt="">
-          <p>This website uses The Movie Database's API, however TMDB is in no way associated with this website.</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-  <!-- Javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/library.js"></script>
 
 </body>
 

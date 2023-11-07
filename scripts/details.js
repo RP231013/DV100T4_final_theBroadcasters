@@ -1,6 +1,10 @@
+//sets the movieID for global use across page
+let globalMovieID;
+
 $(document).ready(function() {
     const urlParams = new URLSearchParams(window.location.search);
     const movieid = urlParams.get('id');
+    globalMovieID = movieid;
 
     if(movieid){
         getMovieDetails(movieid)
@@ -15,6 +19,8 @@ $(document).ready(function() {
 });
 
 
+
+//gets movie details from api using movie id in query parameter
 function getMovieDetails(movieID){
 
     const apiURL = `https://api.themoviedb.org/3/movie/${movieID}?api_key=2ac1e5ad6ec723f6618988e193d2939a`;
@@ -64,7 +70,7 @@ function getMovieDetails(movieID){
 
 }
 
-
+//gets movie trailer 
 function getMovieTrailer(movieID) {
     return new Promise(function(resolve, reject) {
         const apiURL = `https://api.themoviedb.org/3/movie/${movieID}/videos?api_key=2ac1e5ad6ec723f6618988e193d2939a`;
@@ -99,3 +105,29 @@ function checkLoginStatus() {
         $(".logBtn").hide();
     }
 };
+
+// Click function for the add to watchlist button
+$(document).on('click', '#watchBtn', function() {
+    
+    // Get the movie ID from the card
+    const movieID = +(globalMovieID);
+
+    // Retrieve the existing watchlist from local storage or initialize it as an empty array
+    const existingWatchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+
+    // Check if the movie ID is not already in the watchlist
+    if (!existingWatchlist.includes(movieID)) {
+        // Add the movie ID to the watchlist
+        existingWatchlist.push(movieID);
+
+        // Store the updated watchlist in local storage
+        localStorage.setItem('watchlist', JSON.stringify(existingWatchlist));
+
+        // Notify the user 
+        alert("Movie has been added to your watchlist");
+
+    } else {
+        // Notify the user that the movie is already in the watchlist or perform another action
+        alert(`Movie with ID ${movieID} is already in your watchlist.`);
+    }
+});

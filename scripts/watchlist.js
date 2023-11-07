@@ -79,8 +79,10 @@ function loadMovieCards(watchlistArray){
 
 //method for removing movie from local storage 
 $(document).on('click', '.remove-btn', function() {
+
     // Retrieve the movie ID stored in the data attribute of the clicked button
     const movieIdToRemove = $(this).data('movie-id');
+    
 
     // Find the index of this movie ID in the watchlist array
     const indexToRemove = watchlistArray.indexOf(movieIdToRemove);
@@ -95,5 +97,21 @@ $(document).on('click', '.remove-btn', function() {
 
         // Reload the movie cards to show changes
         loadMovieCards(watchlistArray);
+        
     }
 });
+
+// function for checking the login status and updating user info
+function checkLoginStatus() {
+    let logged = localStorage.getItem("userLogged");
+
+    
+    if(logged === "false" || logged === null){
+        $(".userStuff").hide();
+    }else{
+        //updates HTML if user is logged in
+        $(".userStuff").show();
+        $("#insertUser").text("Hello, " + localStorage.getItem("username") + "!");
+        $(".logBtn").hide();
+    }
+};
