@@ -5,6 +5,13 @@ Welcome to The Broadcasters - an online streaming service project that utilizes 
 
 [Watch the demo video here](https://drive.google.com/file/d/13vuyxapopjit2gJJ05mouDUL_1crq4qC/view?usp=sharing)
 
+
+
+![QR code](assets/QRCode.png)
+
+[View the website here](http://www.thebroadcasters.co.za/)
+
+
 ## Table of Contents
 
 * [About the Project](#about-the-project)
