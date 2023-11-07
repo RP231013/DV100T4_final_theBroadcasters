@@ -10,7 +10,7 @@ $(document).ready(function(){
             event.stopPropagation();
         } else {
             let username = $(this).find("#name").val();
-            alert(username);
+            
             localStorage.setItem("username", username);
             let userLogged = true;
             localStorage.setItem("userLogged", userLogged);

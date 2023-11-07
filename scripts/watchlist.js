@@ -8,6 +8,7 @@ $(document).ready(function() {
     }
 
     loadMovieCards(watchlist);
+    checkLoginStatus();
 
 
 });
@@ -75,3 +76,17 @@ function loadMovieCards(watchlist){
 
     
 }
+
+// function for checking the login status and updating user info
+function checkLoginStatus() {
+    let logged = localStorage.getItem("userLogged");
+
+
+    if(logged === "false" || logged === null){
+        $(".userStuff").hide();
+    }else{
+        $(".userStuff").show();
+        $("#insertUser").text("Hello, " + localStorage.getItem("username") + "!");
+        $(".logBtn").hide();
+    }
+};

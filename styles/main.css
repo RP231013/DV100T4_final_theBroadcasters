@@ -9,7 +9,7 @@ body{
 h1{
     font-family: 'Major Mono Display', monospace;
     color: rgba(252, 27, 218, 0.754);
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ h6, p, body{
 }
 
 h2{
-    font-size: 6vh;
+    font-size: 5vw;
 }
 
 h3{
@@ -333,6 +333,5 @@ box-shadow: 5px 2.5px 29px -30px #ffffff;
     width: 2%;
 }
 
-/* Testing zone */
 
 
