@@ -1,7 +1,7 @@
 # The Broadcasters Streaming 
-![Opal Seas Logo](/assets/readMe/readMeBG.png)
+![The Broadcasters Logo](/assets/logoExpanded.png)
 
-Welcome to OpalSeas - a yacht cruise booking project that utilises javascript and jQuery.
+Welcome to The Broadcasters - an online streaming service project that utilizes javascript and jQuery.
 
 [Watch the demo video here](insert link here)
 
@@ -10,10 +10,10 @@ Welcome to OpalSeas - a yacht cruise booking project that utilises javascript an
 * [About the Project](#about-the-project)
    * [Home Page](#home)
       * [About us](#home)
-      * [Featured trips](#home)
-   * [Trips Page](#browse-trips)
-      * [With footer & hover](#cart-page)
-  * [Cart Page](#browse-trips)
+   * [Sign in Page](#sign-up-page)
+   * [Watchlist](#watchlist-page)
+   * [Library](#library-page)
+   * [Details](#details-page)
 * [Getting Started](#getting-started)
   * [Installing](#installing)
 * [Built With](#built-with)
@@ -24,31 +24,32 @@ Welcome to OpalSeas - a yacht cruise booking project that utilises javascript an
 
 ## About The Project
 
-OpalSeas is a yacht cruise booking site which allows users to browse, filter, order and ultimately book yacht cruises. 
+Experience a streaming service like no other and stream movies with The Broadcasters! The Broadcasters is an online Streaming service that allows users to browse, filter though and watch the latest blockbuster hits.The website is compatible with all devices including Desktop, Tablet and Mobile! Lets start your movie bing today with The Broadcasters. 
+ 
 
 ### Home
 
-![Home Page](/screenshots/mockups/homeMockup.png)
+![Home Page](assets/Mockup3.jpg)
 
-### Home - About us
+### Home - Desktop View
 
-![Home Page](/screenshots/mockups/home2.png)
+![Home Page](assets/Mockup2.jpg)
 
-### Home - Featured trips
+### Sign Up Page
 
-![Home Page](/screenshots/mockups/home3.png)
+![Sign in Page](assets/Mockup4.jpg)
 
-### Trips Page
+### Watchlist Page
 
-![Trips Page](/screenshots/mockups/trips.png)
+![Watchlist Page](assets/Mockup1.jpg)
 
-### Trips Page - with hover
+### Library Page
 
-![Trips Page](/screenshots/mockups/trips2.png)
+![Library Page](assets/Mockup6.jpg)
 
-### Cart Page
+### Details Page
 
-![cart Page](/screenshots/mockups//cart.png)
+![Details](assets/Mockup2.jpg)
 
 ## Getting Started
 
@@ -58,7 +59,7 @@ How to get the a local copy of this project for testing and/or developmental pur
 
 1. Clone the repo
 ```sh
-git clone https://github.com/RP231013/term_3_final_submission
+git clone https://github.com/RP231013/DV100T4_FINAL_THEBROADCASTERS
 ```
 2. Open the project
 
@@ -69,7 +70,7 @@ Use `Open Workspace` in Visual Studio.
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Open Weather](https://openweathermap.org/)
+* [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
 
 ## Contributing
 
@@ -83,10 +84,13 @@ As this is merely a first-year project, any contributions/improvements would be 
 
 ## Authors
 
-* **Rouxan Potgieter** - *Design, HTML, CSS, Javascript & Open Weather API Impementation* - [Rouxan Potgieter](https://github.com/RP231013)
+* **Rouxan Potgieter** - *Home & Sign In Design, HTML, CSS, all Javascript & API Implementation* - [Rouxan Potgieter](https://github.com/RP231013)
+* **Tertius Jonker** - *Watchlist HTML + CSS, Ht, Javascript & API Implementation only on Watchlist* - [Tertius Jonker](https://github.com/231051TertiusJ)
+* **Enrique De Sousa** - *Library HTML* - [Enrique De Sousa](https://github.com/Rico945)
+* **Isaac Mooketsi** - *Details Page HTML* - [Issac Mooketsi](https://github.com/isaacmook)
 
 
-See also the list of [contributors](https://github.com/RP231013/term_3_final_submission/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/RP231013/DV100T4_FINAL_THEBROADCASTERS/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -95,5 +99,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgements
 
 * Thanks to [Paul Loots](https://github.com/paulowi) and [Carlo Kuyper](https://github.com/CarloOpenWindow), our lecturers, for the valuable lessons they've imparted!
-* Thanks to this Dribbble [UI inspiration](https://dribbble.com/shots/10822118-Trip-Planning-App-for-Niriides-Cruises).
-* And last but not least, [Unsplash](https://unsplash.com), for all the imagery.
