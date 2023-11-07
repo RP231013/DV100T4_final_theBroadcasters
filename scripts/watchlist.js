@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     if (watchlistArray.length === 0) {
         // Display a message when the watchlist is empty
-        $('#watchListMovies').html('<p>Your watchlist is empty.</p>');
+        $('#watchListMovies').html('<h2>Your watchlist is empty.</h2>');
         return;
     }
 
