@@ -45,11 +45,11 @@ Experience a streaming service like no other and stream movies with The Broadcas
 
 ### Library Page
 
-![Library Page](assets/Mockup6.jpg)
+![Library Page](assets/Mockup5.jpg)
 
 ### Details Page
 
-![Details](assets/Mockup5.jpg)
+![Details](assets/Mockup6.jpg)
 
 ## Getting Started
 
