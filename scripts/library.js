@@ -2,7 +2,6 @@
 $(document).ready(function(){
 
     loadPopularMoviesToday();
-    getGenre();
 
 });
 
@@ -22,7 +21,8 @@ function loadPopularMoviesToday() {
                 title: movie.title,
                 description: (movie.overview).substring(0, 300),
                 poster: movie.poster_path,
-                genres: movie.genre_ids
+                genres: movie.genre_ids,
+                releaseDate: movie.release_date
             }));
 
             console.log(popularMovies);
@@ -35,6 +35,8 @@ function loadPopularMoviesToday() {
             // Hover for movie cards
             cardHover();
 
+            getGenre(popularMovies);
+
         },
         error: function(error) {
             console.log("loadPopularMoviesToday failed to load");
@@ -43,26 +45,13 @@ function loadPopularMoviesToday() {
     });
 }
 
-function getGenre(movieid){
+function getGenre(popularMovies){
     
-    const apiURL = `https://api.themoviedb.org/3/movie/${movieid}?api_key=2ac1e5ad6ec723f6618988e193d2939a`;
+    popularMovies.forEach(movie => {
 
-    $.ajax({
-        url: apiURL,
-        method: 'GET',
-        dataType: 'json',
-        success: function(data) {
+        console.log(movie.genres[0]);
 
-            const mov = data;
-
-            if (mov) {
-                console.log(mov.genres[0].name);
-            }
-
-        },
-        error: function(error) {
-            console.log("loadPopularMoviesToday failed to load");
-        }
+        console.log(movie.releaseDate);
 
     });
             
