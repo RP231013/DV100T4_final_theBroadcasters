@@ -86,7 +86,7 @@ As this is merely a first-year project, any contributions/improvements would be 
 
 * **Rouxan Potgieter** - *Home & Sign In Design, HTML, CSS, all Javascript & API Implementation* - [Rouxan Potgieter](https://github.com/RP231013)
 * **Tertius Jonker** - *Watchlist HTML + CSS, Javascript & API Implementation only on Watchlist* - [Tertius Jonker](https://github.com/231051TertiusJ)
-* **Enrique De Sousa** - *Library HTML* - [Enrique De Sousa](https://github.com/Rico945)
+* **Enrique De Sousa** - *CNTL-C CNTL-V* - [Enrique De Sousa](https://github.com/Rico945)
 * **Isaac Mooketsi** - *Details Page HTML* - [Issac Mooketsi](https://github.com/isaacmook)
 
 
