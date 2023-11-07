@@ -10,7 +10,7 @@ $(document).ready(function() {
         return;
     }
 
-    loadMovieCards(watchlist);
+    loadMovieCards(watchlistArray);
     checkLoginStatus();
 
 
