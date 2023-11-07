@@ -49,7 +49,7 @@ Experience a streaming service like no other and stream movies with The Broadcas
 
 ### Details Page
 
-![Details](assets/Mockup2.jpg)
+![Details](assets/Mockup5.jpg)
 
 ## Getting Started
 
