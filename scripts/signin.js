@@ -35,6 +35,7 @@ $(document).ready(function(){
         if (this.checkValidity() === false) {
             event.stopPropagation();
         } else {
+            
             let username = $(this).find("#name").val();
             
             localStorage.setItem("username", username);

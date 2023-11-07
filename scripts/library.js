@@ -202,6 +202,9 @@ $(document).on('click', '#allFilter', function() {
     let apiurl = "https://api.themoviedb.org/3/trending/movie/week?api_key=2ac1e5ad6ec723f6618988e193d2939a";
     //loads data using loadMovies method
     loadAllMovies(apiurl);
+    const addToContainer = $("#addHeadingHere");
+    addToContainer.empty();
+    addToContainer.append(`<h2>All Movies</h2>`);
 });
 
 //Highly rated filter

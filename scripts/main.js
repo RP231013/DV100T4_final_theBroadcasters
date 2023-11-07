@@ -5,7 +5,7 @@ $(document).ready(function(){
     loadPopularMoviesToday();
     
     //for testing purposes
-    localStorage.clear();
+    //localStorage.clear();
 
 });
 
