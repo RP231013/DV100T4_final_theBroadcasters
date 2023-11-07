@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
     
+    checkLoginStatus();
     loadPopularMoviesToday();
     
     //for testing purposes
@@ -96,7 +97,7 @@ function loadPopularMoviesToday() {
             const popularMovies = data.results.map(movie => ({
                 movieID: movie.id,
                 title: movie.title,
-                description: (movie.overview).substring(0, 300),
+                description: (movie.overview).substring(0, 250),
                 poster: movie.poster_path,
                 genres: movie.genre_ids,
                 backdrop: movie.backdrop_path
@@ -171,7 +172,6 @@ function displayPopularMovies(popularMovies) {
         // Attach the click event handler to the info button 
         card.find('.infoBtn').on('click', function(event){
             event.preventDefault();
-            alert("event triggered");
             window.location.href = `pages/details.html?id=${movie.movieID}`;
         });
     });
@@ -236,6 +236,8 @@ $(document).on('click', '#watchBtn', function() {
     }
 });
 
+
+//checks to see if user is logged in before they can do anything
 $(document).on('click', function(){
     let logged = localStorage.getItem("userLogged");
 
